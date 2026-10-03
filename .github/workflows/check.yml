@@ -38,6 +38,7 @@ jobs:
           CHECK_WORKER: "https://check.helei.kdns.fr/check?sstp=vpn:vpn@"
           CHECK_CONCURRENCY: "32"
           CHECK_TIMEOUT: "90"
+          EDT_UUID: ${{ secrets.EDT_UUID }}
 
       - name: Ensure GitHub Pages is enabled (one-time auto setup)
         run: |
